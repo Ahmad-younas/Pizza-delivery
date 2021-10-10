@@ -5,7 +5,7 @@ exports.getData = (req,res,next)=>{
 }
 exports.InsertData = (req,res,next) =>{
     console.log(req.body);
-    res.send("ok");
+    res.send("ok from backend");
     res.status(200);
 }
 exports.SignUp = (req,res,next) =>{
@@ -19,4 +19,5 @@ exports.SignUp = (req,res,next) =>{
             console.log("error",error);
         }
     });
+    userData.find()
 }
